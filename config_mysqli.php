@@ -6,7 +6,7 @@ const DB_USER = 's67160232';
 const DB_PASS = 'PB6NNeH5';
 const DB_CHARSET = 'utf8mb4';
 
-// ตั้งค่า session ให้ปลอดภัยขึ้น
+// ??????? session ??????????????
 if (session_status() === PHP_SESSION_NONE) {
   session_set_cookie_params([
     'lifetime' => 0,
@@ -18,7 +18,7 @@ if (session_status() === PHP_SESSION_NONE) {
   session_start();
 }
 
-// ให้ mysqli โยน exception เวลา error
+// ??? mysqli ??? exception ???? error
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
 try {
